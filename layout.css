@@ -1,0 +1,213 @@
+.container {
+    width: 1200px;
+    height: 2500px;
+    margin: auto;
+}
+
+.carousel {
+    width: 1200px;
+    margin: auto;
+}
+
+.background {
+    position: absolute;
+    width: 1200px;
+    height: 2500px;
+    margin: auto;
+    background: url('images/background.jpg');
+}
+
+#headphone {
+    position: absolute;
+    top: 250px;
+    right: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+iframe {
+    position: absolute;
+    top: 1100px;
+    left: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+#logo {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+#factory {
+    display: inline-block;
+    position: absolute;
+    top: 550px;
+    left: 225px;
+}
+
+#enterprise {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 10px;
+    width: 600px;
+    height: 300px;
+    box-sizing: border-box;
+    text-align: justify;
+    color: #F7EAC8;
+    font-size: 17px;
+    font-family: "Open Sans Condensed";
+    overflow-y: auto;
+    background-color: #DB3340;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+.text_one, .text_two, .text_three, .text_four, .text_five, .text_six, .text_seven, .text_eight, .text_nine, .text_ten, .text_eleven, .text_twelve, .text_thirteen, .text_fourteen, .text_fiftheen {
+    display: none;
+} 
+
+#quotes {
+    display: inline-block;
+    width: 425px;
+    height: 150px;
+    position: absolute;
+    top: 350px;
+    left: 275px;
+}
+
+#citations {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #DB3340;
+    font-size: 15px;
+    font-family: "Open Sans Condensed";
+    text-transform: uppercase;
+    overflow-y: auto;
+    background-color: #F7EAC8;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+#avstrijska_sv_small {
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    color: #28ABE3;
+    font-family: "Open Sans Condensed";
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+#avstrijska_tem_small {
+    position: absolute;
+    top: 200px;
+    left: 360px;
+    color: #28ABE3;
+    font-family: "Open Sans Condensed";
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+#california_bil_small {
+    position: absolute;
+    top: 200px;
+    left: 660px;
+    color: #28ABE3;
+    font-family: "Open Sans Condensed";
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+#avstrijska_sv, #avstrijska_tem, #california_bil {
+    display: none;
+    width: 900px;
+    height: 1100px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 150px;
+    left: 150px;
+    text-align: center;
+}
+
+#nav {
+    background: #E8B71A;
+    font-family: "Open Sans Condensed";
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+#product {
+    display: none;
+    position: absolute;
+    width: 1200px;
+    height: 2500px;
+    margin: auto;
+    background: url('images/background_production.jpg');
+}
+
+#avstrijska_sv img {
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+#avstrijska_tem img {
+    width: 700px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+#california_bil img {
+    width: 650px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+#avstrijska_sv p, #avstrijska_tem p, #california_bil p {
+    margin: 10px;
+    color: #DB3340;
+    font-family: "Open Sans Condensed";
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#about_product {
+    float: left;
+    width: 400px;
+    margin-top: 150px;
+}
+
+#price_product {
+    float: right;
+    width: 400px;
+    margin-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,9 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
     <head>
-        <title> </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+        <link href='https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="layout.css">
+        <title>LeVAN Manufacture of DecorStones</title>
     </head>
     <body>
-        <p>hallo world</p>
+        <div class="container">
+            <nav id="nav" class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li id="home"><a href="#carousel-example-generic">Home</a></li>
+                            <li id="production"><a href="#carousel-example-generic">Production</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other interest<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Montage</a></li>
+                                    <li><a href="#">Discounts</a></li>
+                                    <li><a href="#">Proposition's</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href=>Price.xls</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" target="_blank">Design</a></li>
+                                    <li><a href="#" target="_blank">Google article</a></li>
+                                    <li><a href="#" target="_blank">Other's</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/carusel_one.jpg" alt="one">
+                    </div>
+                    <div class="item">
+                         <img src="images/carusel_two.jpg" alt="two">
+                    </div>
+                     <div class="item">
+                         <img src="images/carusel_three.jpg" alt="three">
+                    </div>
+                    <div class="item">
+                        <img src="images/carusel_four.jpg" alt="four">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div> 
+            <div id="product">
+                <img id="logo" src="images/logo.jpg" alt="logo">
+                <a href="#avs_sv"><button type="button" class="btn btn-default" id="avstrijska_sv_small"><p>Brick "avstrijska svitla"</p><img src="/images/small/avstrijska_sv_small.jpg" alt="avstrijska_sv_small"></button></a>
+                <a href="#avs_tem"><button type="button" class="btn btn-default" id="avstrijska_tem_small"><p>Brick "avstrijska temna"</p><img src="/images/small/avstrijska_tem_small.jpg" alt="avstrijska_tem_small"></button></a>
+                <a href="#california_bil"><button type="button" class="btn btn-default" id="california_bil_small"><p>Brick "california bila"</p><img src="/images/small/california_bil_small.jpg" alt="california_bil_small"></button></a>
+                <div id="avstrijska_sv">
+                    <img src="images/large/avstrijska_sv_large.jpg" id="avs_sv">
+                    <p>Brick "Avstrijska svitla"</p>
+                    <div id='about_product'>
+                        <p>That color is a calm and confident color that provides security, 
+                           but it is never the center of the attention. Actually this color 
+                           does not seek attention at all, it prefers to stay in the 
+                           background, so other colors around it can shine.
+                        </p>
+                    </div>
+                    <div id="price_product">
+                       <p> Price <br><span id="price_avs_sv"></span> <br>grn/unit<br><br>
+                           One metr contains 48 unit with barrier-weight 1 sm<br><br>
+                           Weight one metr nearly 15 kg<br><br>
+                           Production is packed in carton box which contains 22 unit<br><br>
+                           P.S. Production sells only by quantity of carton boxes  
+                       </p>
+                    </div>
+                </div>
+                <div id="avstrijska_tem">
+                    <img src="images/large/avstrijska_tem_large.jpg" id="avs_tem">
+                    <p>Brick "avstrijska temna"</p>
+                    <div id='about_product'>
+                        <p>This color finds quality in everything – a comfortable home, 
+                           the best food and drink, as well as loyal friends or a partner. 
+                           It is a color that exudes physical comfort, simplicity and quality. 
+                           From a negative perspective, that color may also, under certain 
+                           circumstances, give the impression of stinginess.
+                        </p>
+                    </div>
+                    <div id="price_product">
+                       <p> Price <br><span id="price_avs_tem"></span> <br>grn/unit<br><br>
+                           One metr contains 48 unit with barrier-weight 1 sm<br><br>
+                           Weight one metr nearly 15 kg<br><br>
+                           Production is packed in carton box which contains 22 unit<br><br>
+                           P.S. Production sells only by quantity of carton boxes  
+                       </p>
+                    </div>
+                </div>
+                <div id="california_bil">
+                    <img src="images/large/california_bil_large.jpg" id="cal_bil">
+                    <p>Brick "california bila"</p>
+                    <div id='about_product'>
+                        <p> This color that protects and encourages. It offers a 
+                            sense of peace and tranquility, comfort and hope, and helps to 
+                            relieve emotional disturbances. That color meaning gives a 
+                            sense of order and efficiency, and it is a great help if you need 
+                            to clean up your life. This color offers an inner cleansing 
+                            and purification of your thoughts, feelings and ultimately, your 
+                            spirit.
+                        </p>
+                    </div>
+                    <div id="price_product">
+                       <p> Price <br><span id="price_cal_bil"></span> <br>grn/unit<br><br>
+                           One metr contains 48 unit with barrier-weight 1 sm<br><br>
+                           Weight one metr nearly 15 kg<br><br>
+                           Production is packed in carton box which contains 22 unit<br><br>
+                           P.S. Production sells only by quantity of carton boxes  
+                       </p>
+                    </div>
+                </div>
+            </div>
+            <div class="background">
+                <div id="quotes">
+                    <q id="citations"></q>
+                </div>
+                <div id="factory">
+                    <p id="enterprise">
+                        <span class="text_one">Enterprise "LeVAN" - produce a decorative stones, traditionally made from portland</span>
+                        <span class="text_two">cement. It is a wall facing tile with a complex and sophisticated decor that fantastically</span>
+                        <span class="text_three">accurately replicates the look of natural stones, old brick, wood texture. Artificial stones</span>
+                        <span class="text_four">don't require compulsory certification. Decorative stones is made of environmentally friendly</span>
+                        <span class="text_five">materials, it does not burn, does not emit harmful substances, non-radioactive. Special additives</span>
+                        <span class="text_six">leading German companies protect against UV artificial stone steps, it does not form</span>
+                        <span class="text_seven">efflorescence, it "breathes" and is easy to clean with detergent. Simplicity and ease</span> 
+                        <span class="text_eight">of installation of the artificial stone greatly reduces the cost of finishing the building.</span>
+                        <span class="text_nine">And considering the fact that the artificial stone more natural light and does not require</span> 
+                        <span class="text_ten">special reinforced strengthening the foundations before the assembly, you can not only</span> 
+                        <span class="text_eleven">reduce the cost of work on laying, as well as significantly reduce the construction period.</span> 
+                        <span class="text_twelve">Smooth rear side makes the installation simple and artificial stone, if desired, this can handle each.</span>
+                        <span class="text_thirteen">The material from which made artificial stone is resistant to mechanical action and frost</span> 
+                        <span class="text_fourteen"> and heat-resistant. The walls are decorated with artificial stone, not only have a good aesthetic appearance,</span> 
+                        <span class="text_fiftheen"> but also receive additional heat and waterproofing, will stand for decades, creating an atmosphere of antiquity, and a feeling of warmth.</span>
+                    </p>
+                </div>
+                <button type="button" class="btn btn-default" id="headphone"><img src="images/headphone-159569_640.png" alt="headphone"></button>
+                <img id="logo" src="images/logo.jpg" alt="logo">
+                <audio id="audio">
+                    <source src="http://uk1.internet-radio.com:15614/;" type="audio/mpeg">
+                </audio> 
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/kCf0wWwu6hk" frameborder="0" allowfullscreen></iframe>
+            </div> 
+        </div>
+        
+    
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
