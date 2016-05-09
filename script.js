@@ -1,24 +1,6 @@
-// JavaScript File
-$(document).ready(function(){
-    $(".text_one").fadeIn('slow');
-    $(".text_two").fadeIn(2000);
-    $(".text_three").fadeIn(3000);
-    $(".text_four").fadeIn(4000);
-    $(".text_five").fadeIn(5000);
-    $(".text_six").fadeIn(6000);
-    $(".text_seven").fadeIn(7000);
-    $(".text_eight").fadeIn(8000);
-    $(".text_nine").fadeIn(9000);
-    $(".text_ten").fadeIn(10000);
-    $(".text_eveven").fadeIn(11000);
-    $(".text_twelve").fadeIn(12000);
-    $(".text_thirteen").fadeIn(13000);
-    $(".text_fourteen").fadeIn(14000);
-    $(".text_fiftheen").fadeIn(15000);
-});
-
 $(document).ready(function() {
     $('#production').click(function() {
+        $('.carousel').hide('fast');
         $('.background').hide('fast');
         $('#product').show();
     });
@@ -27,6 +9,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#home').click(function() {
         $('#product').hide('fast');
+        $('.carousel').show();
         $('.background').show();
     });
 });
@@ -38,6 +21,7 @@ $(document).ready(function(){
     $("#avstrijska_sv_small").click(function() {
        $('#avstrijska_tem').hide();
        $('#california_bil').hide();
+       $('#california').hide();
        $('#avstrijska_sv').show();
     });
 });
@@ -46,6 +30,7 @@ $(document).ready(function() {
     $('#avstrijska_tem_small').click(function() {
         $('#avstrijska_sv').hide();
         $('#california_bil').hide();
+        $('#california').hide();
         $('#avstrijska_tem').show();
     });
 });
@@ -54,11 +39,56 @@ $(document).ready(function() {
     $('#california_bil_small').click(function() {
         $('#avstrijska_sv').hide();
         $('#avstrijska_tem').hide();
+        $('#california').hide();
         $('#california_bil').show();
     });
 });
 
+$(document).ready(function() {
+    $('#california_small').click(function() {
+        $('#avstrijska_sv').hide();
+        $('#avstrijska_tem').hide();
+        $('#california_bil').hide();
+        $('#california').show();
+    });
+});
 
+
+
+$(function () {
+    var pic = $('.pictures');
+    var backgrounds = [
+      'url(images/small/avstrijska_sv_small.jpg)', 
+      'url(images/small/avstrijska_tem_small.jpg)', 
+      'url(images/small/california_bil_small.jpg)', 
+      'url(images/small/california_small.jpg)', 
+      'url(images/small/california_sv_small.jpg)', 
+      'url(images/small/california_tem_small.jpg)',  
+      'url(images/small/carolinna_small.jpg)', 
+      'url(images/small/cegljna_small.jpg)', 
+      'url(images/small/copyng_small.jpg)',  
+      'url(images/small/coralova_small.jpg)',  
+      'url(images/small/corner_small.jpg)', 
+      'url(images/small/garden_trav_small.jpg)',
+      'url(images/small/modena_roz_small.jpg)',
+      'url(images/small/modena_sv_small.jpg)',
+      'url(images/small/old_small.jpg)',
+      'url(images/small/old_street_small.jpg)',
+      'url(images/small/st_myr_small.jpg)',
+      'url(images/small/verona_sv_small.jpg)',
+      'url(images/small/vushneva_small.jpg)',];
+    var current = 0;
+
+    function nextBackground() {
+        pic.css(
+            'background',
+        backgrounds[current = ++current % backgrounds.length]);
+
+        setTimeout(nextBackground, 5000);
+    }
+    setTimeout(nextBackground, 5000);
+    body.css('background', backgrounds[0]);
+});
 
 
     var array = [];

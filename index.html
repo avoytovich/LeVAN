@@ -2,17 +2,24 @@
 <html  lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
         <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
         <link href='https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="layout.css">
+        <link rel="stylesheet" media="(max-width: 1200px)" href="media_queries_1200.css">
+        <link rel="stylesheet" media="(max-width: 1000px)" href="media_queries_1000.css">
+        <link rel="stylesheet" media="(max-width: 800px)" href="media_queries_800.css">
+        <link rel="stylesheet" media="(max-width: 600px)" href="media_queries_600.css">
+        <link rel="stylesheet" media="(max-width: 400px)" href="media_queries_400.css">
         <title>LeVAN Manufacture of DecorStones</title>
     </head>
     <body>
-        <div class="container">
-            <nav id="nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container" id="container">
+          <main>
+            <nav id="nav" class="navbar navbar-default navbar-static-top">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -27,8 +34,8 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-left">
-                            <li id="home"><a href="#carousel-example-generic">Home</a></li>
-                            <li id="production"><a href="#carousel-example-generic">Production</a></li>
+                            <li id="home"><a href="#container">Home</a></li>
+                            <li id="production"><a href="#container">Production</a></li>
                             <li><a href="#">Contact</a></li>
                             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other interest<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
@@ -80,13 +87,73 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
             </div> 
+            <div class="background_header">
+                <div class='background_header_one'>
+                    <img id="logo" src="images/logo.jpg" alt="logo" class="img-responsive">
+                    <h1>LeVAN</h1>
+                </div>
+                <div class='background_header_two'>
+                    <h2>Manufacture of DecorStones</h2>
+                    <button type="button" class="btn btn-default" id="headphone"><img src="images/headphone-159569_640.png" alt="headphone"></button>
+                    <audio id="audio">
+                        <source src="http://us2.internet-radio.com:8314/;stream" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="background">
+                <div class="background_main">
+                    <div id="factory_one">
+                        <div class="pictures"></div>
+                        <p id="enterprise_one">
+                            <span class="text_one">Enterprise "LeVAN" - produce a decorative stones, traditionally made from portland cement.</span>
+                            <span class="text_two">It is a wall facing tile with a complex and sophisticated decor that fantastically</span>
+                            <span class="text_three">accurately replicates the look of natural stones, old brick, wood texture.</span>
+                            <span class="text_four">Artificial stones don't require compulsory certification. Decorative stones is made of environmentally friendly</span>
+                            <span class="text_five">materials, it does not burn, does not emit harmful substances, non-radioactive.</span>
+                        </p>
+                    </div>
+                    <div id="factory_two">
+                        <p id="enterprise_two"> 
+                            <span class="text_six">Special additives leading German companies protect against UV artificial stone steps, it does not form</span>
+                            <span class="text_seven">efflorescence, it "breathes" and is easy to clean with detergent.</span> 
+                            <span class="text_eight">Simplicity and ease of installation of the artificial stone greatly reduces the cost of finishing the building.</span>
+                            <span class="text_nine">And considering the fact that the artificial stone more natural light and does not require</span> 
+                            <span class="text_ten">special reinforced strengthening the foundations before the assembly, you can not only</span> 
+                            <span class="text_eleven">reduce the cost of work on laying, as well as significantly reduce the construction period.</span> 
+                            <span class="text_twelve">Smooth rear side makes the installation simple and artificial stone, if desired, this can handle each.</span>
+                        </p>
+                    </div>
+                    <div id="factory_three">
+                        <p id="enterprise_three">    
+                            <span class="text_thirteen">The material from which made artificial stone is resistant to mechanical action and frost</span> 
+                            <span class="text_fourteen"> and heat-resistant. The walls are decorated with artificial stone, not only have a good aesthetic appearance,</span> 
+                            <span class="text_fiftheen"> but also receive additional heat and waterproofing, will stand for decades, creating an atmosphere of antiquity, and a feeling of warmth.</span>
+                        </p>
+                    </div>
+                    <div id="quotes">
+                        <q id="citations"></q>
+                    </div>
+                </div>
+            </div>
+                    <div class="information">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kCf0wWwu6hk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="background_notice">
+                    </div>
+                <div class="background_footer">
+                </div>
+            </div> 
             <div id="product">
-                <img id="logo" src="images/logo.jpg" alt="logo">
-                <a href="#avs_sv"><button type="button" class="btn btn-default" id="avstrijska_sv_small"><p>Brick "avstrijska svitla"</p><img src="images/small/avstrijska_sv_small.jpg" alt="avstrijska_sv_small"></button></a>
-                <a href="#avs_tem"><button type="button" class="btn btn-default" id="avstrijska_tem_small"><p>Brick "avstrijska temna"</p><img src="images/small/avstrijska_tem_small.jpg" alt="avstrijska_tem_small"></button></a>
-                <a href="#california_bil"><button type="button" class="btn btn-default" id="california_bil_small"><p>Brick "california bila"</p><img src="images/small/california_bil_small.jpg" alt="california_bil_small"></button></a>
-                <div id="avstrijska_sv">
-                    <img src="images/large/avstrijska_sv_large.jpg" id="avs_sv">
+                <div class="background_header">
+                    <img id="logo" src="images/logo.jpg" alt="logo">
+                </div>
+                <div id="all_product">
+                    <a href="#avs_sv"><button type="button" class="btn btn-default" id="avstrijska_sv_small"><p>Brick "avstrijska svitla"</p><img src="images/small/avstrijska_sv_small.jpg" alt="avstrijska_sv_small"></button></a>
+                    <a href="#avs_tem"><button type="button" class="btn btn-default" id="avstrijska_tem_small"><p>Brick "avstrijska temna"</p><img src="images/small/avstrijska_tem_small.jpg" alt="avstrijska_tem_small"></button></a>
+                    <a href="#california_bil"><button type="button" class="btn btn-default" id="california_bil_small"><p>Brick "california bila"</p><img src="images/small/california_bil_small.jpg" alt="california_bil_small"></button></a>
+                    <a href="#california"><button type="button" class="btn btn-default" id="california_small"><p>Brick "california"</p><img src="images/small/california_small.jpg" alt="california_small"></button></a>
+                </div>
+                <div id="avstrijska_sv" class="all_product">
                     <p>Brick "Avstrijska svitla"</p>
                     <div id='about_product'>
                         <p>That color is a calm and confident color that provides security, 
@@ -103,8 +170,9 @@
                            P.S. Production sells only by quantity of carton boxes  
                        </p>
                     </div>
+                    <img src="images/large/avstrijska_sv_large.jpg" id="avs_sv">
                 </div>
-                <div id="avstrijska_tem">
+                <div id="avstrijska_tem" class="all_product">
                     <img src="images/large/avstrijska_tem_large.jpg" id="avs_tem">
                     <p>Brick "avstrijska temna"</p>
                     <div id='about_product'>
@@ -124,7 +192,7 @@
                        </p>
                     </div>
                 </div>
-                <div id="california_bil">
+                <div id="california_bil" class="all_product">
                     <img src="images/large/california_bil_large.jpg" id="cal_bil">
                     <p>Brick "california bila"</p>
                     <div id='about_product'>
@@ -146,38 +214,32 @@
                        </p>
                     </div>
                 </div>
+                <div id="california" class="all_product">
+                    <img src="images/large/california_large.jpg" id="cal">
+                    <p>Brick "california"</p>
+                    <div id='about_product'>
+                        <p> This color that protects and encourages. It offers a 
+                            sense of peace and tranquility, comfort and hope, and helps to 
+                            relieve emotional disturbances. That color meaning gives a 
+                            sense of order and efficiency, and it is a great help if you need 
+                            to clean up your life. This color offers an inner cleansing 
+                            and purification of your thoughts, feelings and ultimately, your 
+                            spirit.
+                        </p>
+                    </div>
+                    <div id="price_product">
+                       <p> Price <br><span id="price_cal"></span> <br>grn/unit<br><br>
+                           One metr contains 48 unit with barrier-weight 1 sm<br><br>
+                           Weight one metr nearly 15 kg<br><br>
+                           Production is packed in carton box which contains 22 unit<br><br>
+                           P.S. Production sells only by quantity of carton boxes  
+                       </p>
+                    </div>
+                </div>
             </div>
-            <div class="background">
-                <div id="quotes">
-                    <q id="citations"></q>
-                </div>
-                <div id="factory">
-                    <p id="enterprise">
-                        <span class="text_one">Enterprise "LeVAN" - produce a decorative stones, traditionally made from portland</span>
-                        <span class="text_two">cement. It is a wall facing tile with a complex and sophisticated decor that fantastically</span>
-                        <span class="text_three">accurately replicates the look of natural stones, old brick, wood texture. Artificial stones</span>
-                        <span class="text_four">don't require compulsory certification. Decorative stones is made of environmentally friendly</span>
-                        <span class="text_five">materials, it does not burn, does not emit harmful substances, non-radioactive. Special additives</span>
-                        <span class="text_six">leading German companies protect against UV artificial stone steps, it does not form</span>
-                        <span class="text_seven">efflorescence, it "breathes" and is easy to clean with detergent. Simplicity and ease</span> 
-                        <span class="text_eight">of installation of the artificial stone greatly reduces the cost of finishing the building.</span>
-                        <span class="text_nine">And considering the fact that the artificial stone more natural light and does not require</span> 
-                        <span class="text_ten">special reinforced strengthening the foundations before the assembly, you can not only</span> 
-                        <span class="text_eleven">reduce the cost of work on laying, as well as significantly reduce the construction period.</span> 
-                        <span class="text_twelve">Smooth rear side makes the installation simple and artificial stone, if desired, this can handle each.</span>
-                        <span class="text_thirteen">The material from which made artificial stone is resistant to mechanical action and frost</span> 
-                        <span class="text_fourteen"> and heat-resistant. The walls are decorated with artificial stone, not only have a good aesthetic appearance,</span> 
-                        <span class="text_fiftheen"> but also receive additional heat and waterproofing, will stand for decades, creating an atmosphere of antiquity, and a feeling of warmth.</span>
-                    </p>
-                </div>
-                <button type="button" class="btn btn-default" id="headphone"><img src="images/headphone-159569_640.png" alt="headphone"></button>
-                <img id="logo" src="images/logo.jpg" alt="logo">
-                <audio id="audio">
-                    <source src="http://uk1.internet-radio.com:15614/;" type="audio/mpeg">
-                </audio> 
-                <iframe width="250" height="200" src="https://www.youtube.com/embed/kCf0wWwu6hk" frameborder="0" allowfullscreen></iframe>
-            </div> 
+          </main>
         </div>
+        
         
     
     
