@@ -1,57 +1,10 @@
 $(document).ready(function() {
-    $('#production').click(function() {
-        $('.carousel').hide('fast');
-        $('.background').hide('fast');
-        $('#product').show();
-    });
+    $('.navbar-toggle').click(logo);
 });
 
-$(document).ready(function() {
-    $('#home').click(function() {
-        $('#product').hide('fast');
-        $('.carousel').show();
-        $('.background').show();
-    });
-});
-
-
-
-
-$(document).ready(function(){
-    $("#avstrijska_sv_small").click(function() {
-       $('#avstrijska_tem').hide();
-       $('#california_bil').hide();
-       $('#california').hide();
-       $('#avstrijska_sv').show();
-    });
-});
-
-$(document).ready(function() {
-    $('#avstrijska_tem_small').click(function() {
-        $('#avstrijska_sv').hide();
-        $('#california_bil').hide();
-        $('#california').hide();
-        $('#avstrijska_tem').show();
-    });
-});
-
-$(document).ready(function() {
-    $('#california_bil_small').click(function() {
-        $('#avstrijska_sv').hide();
-        $('#avstrijska_tem').hide();
-        $('#california').hide();
-        $('#california_bil').show();
-    });
-});
-
-$(document).ready(function() {
-    $('#california_small').click(function() {
-        $('#avstrijska_sv').hide();
-        $('#avstrijska_tem').hide();
-        $('#california_bil').hide();
-        $('#california').show();
-    });
-});
+function logo () {
+    $('#logo').toggle(1000);
+}
 
 
 
@@ -92,17 +45,17 @@ $(function () {
 
 
     var array = [];
-    array [0] = "Success is most often achieved by those who don't know that failure is inevitable. -- Coco Chanel";
-    array [1] = "Things work out best for those who make the best of how things work out.- John Wooden";
-    array [2] = "Courage is grace under pressure. -- Ernest Hemingway";
-    array [3] = "If you are not willing to risk the usual, you will have to settle for the ordinary.- Jim Rohn";
-    array [4] = "Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning. -- Albert Einstein";
-    array [5] = "Take up one idea. Make that one idea your life -- think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success. -- Swami Vivekananda";
-    array [6] = "Sometimes you can't see yourself clearly until you see yourself through the eyes of others. -- Ellen DeGeneres";
-    array [7] = "All our dreams can come true if we have the courage to pursue them.- Walt Disney";
-    array [8] = "It does not matter how slowly you go, so long as you do not stop.- Confucius";
-    array [9] = "Success is walking from failure to failure with no loss of enthusiasm.- Winston Churchill";
-    array [10] = "Someone is sitting in the shade today because someone planted a tree a long time ago. -- Warren Buffett";
+    array [0] = "'Success is most often achieved by those who don't know that failure is inevitable'--- Coco Chanel";
+    array [1] = "'Things work out best for those who make the best of how things work out'--- John Wooden";
+    array [2] = "'Courage is grace under pressure'--- Ernest Hemingway";
+    array [3] = "'If you are not willing to risk the usual, you will have to settle for the ordinary'--- Jim Rohn";
+    array [4] = "'Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning'--- Albert Einstein";
+    array [5] = "'Take up one idea. Make that one idea your life -- think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success'--- Swami Vivekananda";
+    array [6] = "'Sometimes you can't see yourself clearly until you see yourself through the eyes of others'--- Ellen DeGeneres";
+    array [7] = "'All our dreams can come true if we have the courage to pursue them'--- Walt Disney";
+    array [8] = "'It does not matter how slowly you go, so long as you do not stop'--- Confucius";
+    array [9] = "'Success is walking from failure to failure with no loss of enthusiasm'--- Winston Churchill";
+    array [10] = "'Someone is sitting in the shade today because someone planted a tree a long time ago'--- Warren Buffett";
 
 document.getElementById("citations").innerHTML = array[Math.floor(Math.random()*10)];
 

@@ -1,105 +1,95 @@
-main {
-    background: #f7eac8;
+body {
+    background: #F7EAC8;
 }
 
 #nav {
-    margin-bottom: 0px;
     font-family: "Open Sans Condensed";
     font-size: 21px;
     text-transform: uppercase;
+    margin-bottom: 0px;
     background: #E8B71A;
 }
 
-.background_header_one {
-    background: #28ABE3;
-    height: 100px;
-    text-align: left;
+#logo {
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 
-.background_header_one h1 {
-    display: inline-block;
-    padding-left: 50px;
-    color: white;
+.item img {
+    margin: auto;
+    width: auto;
+}
+
+.background_header {
+     margin: 20px 0px;
+     text-align: center;
+}
+
+.background_header_one {
     font-size: 48px;
+    text-align: center;
     font-family: "Open Sans Condensed";
+    color: #F7EAC8;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    background: #DB3340;
 }
 
 .background_header_two {
-    background: #F7EAC8;
-    height: 100px;
+    font-size: 24px;
     text-align: center;
+    font-family: "Open Sans Condensed";
+    color: #DB3340;
+    background: #F7EAC8;
 }
 
-.background_header_two h2 {
-    display: inline-block;
-    color: #DB3340;
+.background_header_three {
     font-size: 48px;
+    text-align: center;
     font-family: "Open Sans Condensed";
+    color: #F7EAC8;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    background: #1FDA9A;
 }
 
 .background_main {
-     height: 806px;
-     background: url('images/background_main.jpg') no-repeat;
-     background-size: 100%;
+     background: #F7EAC8;
+     text-align: center;
 }
 
-.background_notice {
-    height: 843px;
-    background: url('images/background_notice.jpg');
+#quotes {
+    margin: 20px 20px;
 }
 
-.background_footer {
-    height: 81px;
-    background: url('images/background_footer.jpg');
-}
-
-#logo {
-    display: inline-block;
-    margin-left: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-}
-
-#headphone {
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-}
-
-iframe {
-    display: inline-block;
-    margin: 20px;
+#citations {
+    color: #F7EAC8;
+    font-size: 21px;
+    font-family: "Open Sans Condensed";
+    text-transform: uppercase;
+    background: #E8B71A;
+    border-left:#E8B71A;
     border-radius: 10px;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 
 #factory_one, #factory_two, #factory_three {
     display: inline-block;
-    vertical-align: bottom;
-    margin-top: 170px;
-    width: 210px;
-}
-
-#factory_one {
-    margin-left: 250px;
 }
 
 #enterprise_one, #enterprise_two, #enterprise_three {
-    padding: 10px;
     text-align: justify;
+    text-indent: 20px;
     color: black;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.3;
     font-family: "Open Sans Condensed";
     background-color: transparent;
 }
 
 .pictures {
-    margin-right: 0px;
-    margin-bottom: 0px;
+    float: left;
+    margin: 10px 20px;
     width: 200px;
     height: 150px;
     border-radius: 20px;
@@ -107,42 +97,57 @@ iframe {
     background: url('images/cambridge.jpg') center no-repeat;
 }
 
-#quotes {
+iframe, .design {
     display: inline-block;
-    width: 400px;
-    height: 150px;
-    margin-top: 10px;
-    margin-left: 500px;
-}
-
-#citations {
-    display: inline-block;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    color: #DB3340;
-    font-size: 15px;
-    font-family: "Open Sans Condensed";
-    text-transform: uppercase;
-    overflow-y: auto;
-    background-color: #F7EAC8;
+    margin: 20px;
+    width: 80%;
     border-radius: 10px;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 
+#headphone {
+    float: right;
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+.background_notice {
+    background: #F7EAC8;
+    height:100px;
+    border: 1px solid blue;
+}
+
+.background_footer {
+    background: #28ABE3;
+    height:100px;
+    border: 1px solid blue;
+}
+
+
+
 #product {
-    display: none;
-    position: absolute;
     margin: auto;
     background: #f7eac8;
+    border: 1px solid blue;
 }
 
 #all_product {
-    display: inline-block;
-    position: absolute;
-    top: 200px;
     text-align: center;
     background: #f7eac8;
+    border: 1px solid red;
+}
+
+figure {
+    display: inline-block;
+    margin: 20px 5px;
+    border: 1px solid black;
+}
+
+figure img {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 
 #avstrijska_sv_small, #avstrijska_tem_small, #california_bil_small, #california_small {
