@@ -1,9 +1,16 @@
 $(document).ready(function() {
     $('.navbar-toggle').click(logo);
+    $(document).scroll(on_top);
 });
 
 function logo () {
     $('#logo').toggle(1000);
+}
+
+function on_top () {
+    $('.on_top').fadeIn(3000, function () {
+        $('.on_top').fadeOut(5000);
+    });
 }
 
 
