@@ -59,7 +59,8 @@ body {
 }
 
 #quotes {
-    margin: 20px 20px;
+    margin: auto;
+    width: auto;
 }
 
 #citations {
@@ -79,6 +80,7 @@ body {
 
 #enterprise_one, #enterprise_two, #enterprise_three {
     text-align: justify;
+    font-style: italic;
     text-indent: 20px;
     color: black;
     font-size: 17px;
@@ -97,10 +99,22 @@ body {
     background: url('images/cambridge.jpg') center no-repeat;
 }
 
-iframe, .design {
+.ico {
+    width: 15%;
+}
+
+iframe {
+    display: inline-block;
+    margin: 10px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+.design {
     display: inline-block;
     margin: 20px;
-    width: 80%;
+    width:50%;
     border-radius: 10px;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
@@ -112,36 +126,71 @@ iframe, .design {
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 
-.background_notice {
-    background: #F7EAC8;
-    height:100px;
-    border: 1px solid blue;
+.information {
+    font-size: 16px;
+    text-indent: 20px;
+    text-align: justify;
+    font-family: "Open Sans Condensed";
 }
+
+.information h3, .background_notice h3, .product h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #DB3340;
+}
+
+.information span {
+    font-weight: bold;
+}
+
+.background_notice p {
+    font-size: 14px;
+    text-indent: 20px;
+    color: #F7EAC8;
+    text-align: justify;
+    font-family: "Open Sans Condensed";
+    background: #1FDA9A;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+.product {
+    text-align: center;
+}
+
+.product figcaption {
+    font-size: 17px;
+    color: #F7EAC8;
+    background: #28ABE3;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+
+
 
 .background_footer {
-    background: #28ABE3;
-    height:100px;
-    border: 1px solid blue;
-}
-
-
-
-#product {
-    margin: auto;
-    background: #f7eac8;
-    border: 1px solid blue;
-}
-
-#all_product {
+    font-size: 14px;
     text-align: center;
-    background: #f7eac8;
-    border: 1px solid red;
+    color: #F7EAC8;
+    background: #E8B71A;
 }
+
+.on_top {
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    width: 15%;
+}
+
+.my_logo {
+    margin: 10px;
+}
+
 
 figure {
     display: inline-block;
-    margin: 20px 5px;
-    border: 1px solid black;
+    margin: 20px 20px;
 }
 
 figure img {
