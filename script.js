@@ -1,6 +1,10 @@
 $(document).ready(function() {
     $('.navbar-toggle').click(logo);
     $(document).scroll(on_top);
+    $('.avstrijska_sv_small').click(about);
+    $('.laying').click(laying);
+    $('#home').click(home);
+    $('#production').click(production);
 });
 
 function logo () {
@@ -12,6 +16,27 @@ function on_top () {
         $('.on_top').fadeOut(5000);
     });
 }
+
+function about () {
+    $('#avstrijska_sv').fadeIn(1000);
+}
+
+function laying () {
+    $('.background_main, .background_notice, .product').fadeOut(1000);
+    $('.information').fadeIn(1000)
+}
+
+function home () {
+    $('.information, .product').fadeOut(1000);
+    $('.background_main, .background_notice').fadeIn(1000)
+}
+
+function production () {
+    $('.background_main, .information, .background_notice').fadeOut(1000);
+    $('.product').fadeIn(1000);
+}
+
+
 
 
 
