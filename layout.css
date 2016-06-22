@@ -76,8 +76,13 @@ body {
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 
-#factory_one, #factory_two, #factory_three {
-    display: inline-block;
+#factory, .instruction {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
 }
 
 #enterprise_one, #enterprise_two, #enterprise_three {
@@ -133,6 +138,7 @@ iframe {
     font-size: 16px;
     text-indent: 20px;
     text-align: justify;
+    font-style: italic;
     font-family: "Open Sans Condensed";
 }
 
@@ -142,8 +148,13 @@ iframe {
     color: #DB3340;
 }
 
-.information span {
-    font-weight: bold;
+.instruction p {
+    font-size: 14px;
+    text-indent: 20px;
+}
+
+.instruction h4 {
+   color: #DB3340;
 }
 
 .background_notice p {
@@ -172,6 +183,10 @@ iframe {
 
 figure {
     display: inline-block;
+}
+
+.ico {
+    opacity: 0.5;
 }
 
 figure img {

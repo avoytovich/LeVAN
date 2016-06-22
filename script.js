@@ -5,6 +5,8 @@ $(document).ready(function() {
     $('.laying').click(laying);
     $('#home').click(home);
     $('#production').click(production);
+    $('.ico').mouseenter(light);
+    $('.ico').mouseleave(dark);
 });
 
 function logo () {
@@ -34,6 +36,14 @@ function home () {
 function production () {
     $('.background_main, .information, .background_notice').fadeOut(1000);
     $('.product').fadeIn(1000);
+}
+
+function light () {
+    $(this).fadeTo("fast",1);
+}
+
+function dark () {
+    $(this).fadeTo("fast",0.5);
 }
 
 
