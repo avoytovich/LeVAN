@@ -6,3 +6,7 @@
     -moz-column-gap: 5px;
     column-gap: 5px;
 }
+
+#enterprise_two, #enterprise_three, .design, #quotes, #headphone, #about_color {
+    display: none;
+}

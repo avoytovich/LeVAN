@@ -1,7 +1,9 @@
 $(document).ready(function() {
     $('.navbar-toggle').click(logo);
     $(document).scroll(on_top);
-    $('.avstrijska_sv_small').click(about);
+    $('.avstrijska_sv_small').click(about_AVSsv);
+    $('.avstrijska_tem_small').click(about_AVStem);
+    $('.california_bil_small').click(about_CALbil);
     $('.laying').click(laying);
     $('#home').click(home);
     $('#production').click(production);
@@ -19,27 +21,39 @@ function on_top () {
     });
 }
 
-function about () {
-    $('#avstrijska_sv').fadeIn(1000);
+function about_AVSsv () {
+    $('.about_all, #avstrijska_tem, #california_bil' ).fadeOut(1000);
+    $('.discribe_all, #avstrijska_sv').fadeIn(1000);
+}
+
+function about_AVStem () {
+    $('.about_all, #avstrijska_sv, #california_bil' ).fadeOut(1000);
+    $('.discribe_all, #avstrijska_tem').fadeIn(1000);
+}
+
+function about_CALbil () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem' ).fadeOut(1000);
+    $('.discribe_all, #california_bil').fadeIn(1000);
 }
 
 function laying () {
-    $('.background_main, .background_notice, .product').fadeOut(1000);
+    $('.background_main, .background_notice, .product, .carousel' ).fadeOut(1000);
     $('.information').fadeIn(1000)
 }
 
 function home () {
     $('.information, .product').fadeOut(1000);
-    $('.background_main, .background_notice').fadeIn(1000)
+    $('.background_main, .background_notice, .carousel').fadeIn(1000)
 }
 
 function production () {
-    $('.background_main, .information, .background_notice').fadeOut(1000);
-    $('.product').fadeIn(1000);
+    $('.background_main, .information, .background_notice, .carousel, .discribe_all').fadeOut(1000);
+    $('.product, .about_all').fadeIn(1000);
 }
 
 function light () {
     $(this).fadeTo("fast",1);
+    
 }
 
 function dark () {
