@@ -7,6 +7,16 @@ $(document).ready(function() {
     $('.california_small').click(about_CAL);
     $('.california_sv_small').click(about_CALsv);
     $('.california_tem_small').click(about_CALtem);
+    $('.carolinna_small').click(about_CAR);
+    $('.cegljna_small').click(about_CEG);
+    $('.copyng_small').click(about_COP);
+    $('.coralova_small').click(about_COR);
+    $('.corner_small').click(about_CORN);
+    $('.garden_trav_small').click(about_GARDtr);
+    $('.modena_roz_small').click(about_MODroz);
+    $('.modena_sv_small').click(about_MODsv);
+    $('.old_small').click(about_OLD);
+    $('.old_st_small').click(about_OLDst);
     $('.laying').click(laying);
     $('#home').click(home);
     $('#production').click(production);
@@ -25,34 +35,85 @@ function on_top () {
 }
 
 function about_AVSsv () {
-    $('.about_all, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem' ).fadeOut(1000);
+    $('.about_all, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
     $('.discribe_all, #avstrijska_sv').fadeIn(1000);
 }
 
 function about_AVStem () {
-    $('.about_all, #avstrijska_sv, #california_bil, #california, #california_sv, #california_tem' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
     $('.discribe_all, #avstrijska_tem').fadeIn(1000);
 }
 
 function about_CALbil () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california, #california_sv, #california_tem' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
     $('.discribe_all, #california_bil').fadeIn(1000);
 }
 
 function about_CAL () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california_sv, #california_tem' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
     $('.discribe_all, #california').fadeIn(1000);
 }
 
 function about_CALsv () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_tem' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
     $('.discribe_all, #california_sv').fadeIn(1000);
 }
 
 function about_CALtem () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
     $('.discribe_all, #california_tem').fadeIn(1000);
 }
+
+function about_CAR () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.discribe_all, #carolinna').fadeIn(1000);
+}
+
+function about_CEG () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.discribe_all, #cegljna').fadeIn(1000);
+}
+
+function about_COP () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.discribe_all, #copyng').fadeIn(1000);
+}
+
+function about_COR () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.discribe_all, #coralova').fadeIn(1000);
+}
+
+function about_CORN () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.discribe_all, #corner').fadeIn(1000);
+}
+
+function about_GARDtr () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.discribe_all, #garden_trav').fadeIn(1000);
+}
+
+function about_MODroz () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.discribe_all, #modena_roz').fadeIn(1000);
+}
+
+function about_MODsv () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #old, #old_street' ).fadeOut(1000);
+    $('.discribe_all, #modena_sv').fadeIn(1000);
+}
+
+function about_OLD () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old_street').fadeOut(1000);
+    $('.discribe_all, #old').fadeIn(1000);
+}
+
+function about_OLDst () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old' ).fadeOut(1000);
+    $('.discribe_all, #old_street').fadeIn(1000);
+}
+
 
 function laying () {
     $('.background_main, .background_notice, .product, .carousel' ).fadeOut(1000);
@@ -140,11 +201,21 @@ var price = [];
     price [3] = "5,15"; //Cal
     price [4] = "5,15"; //Cal_sv
     price [5] = "5,15"; //Cal_tem
-    price [6] = "5,11"; //Avs_sv
-    price [7] = "5,11"; //Avs_sv
-    price [8] = "5,11"; //Avs_sv
-    price [9] = "5,11"; //Avs_sv
-    price [10] = "5,11"; //Avs_sv
+    price [6] = "371,45"; //Car
+    price [7] = "5,20"; //Ceg
+    price [8] = "123,82"; //Cop
+    price [9] = "5,15"; //Cor
+    price [10] = "17,52"; //Corn
+    price [11] = "355,98"; //Gar_tr
+    price [12] = "318,78"; //Mod_roz
+    price [13] = "309,54"; //Mod_sv
+    price [14] = "5,25"; //Old
+    price [15] = "5,30"; //Old_st
+    price [16] = "5,11"; //Avs_sv
+    price [17] = "5,11"; //Avs_sv
+    price [18] = "5,11"; //Avs_sv
+    price [19] = "5,11"; //Avs_sv
+    price [20] = "5,11"; //Avs_sv
 
 document.getElementById("price_avs_sv").innerHTML = price[0];
 document.getElementById("price_avs_tem").innerHTML = price[1];
@@ -152,6 +223,16 @@ document.getElementById("price_cal_bil").innerHTML = price[2];
 document.getElementById("price_cal").innerHTML = price[3];
 document.getElementById("price_cal_sv").innerHTML = price[4];
 document.getElementById("price_cal_tem").innerHTML = price[5];
+document.getElementById("price_car").innerHTML = price[6];
+document.getElementById("price_ceg").innerHTML = price[7];
+document.getElementById("price_cop").innerHTML = price[8];
+document.getElementById("price_cor").innerHTML = price[9];
+document.getElementById("price_corn").innerHTML = price[10];
+document.getElementById("price_gar_tr").innerHTML = price[11];
+document.getElementById("price_mod_roz").innerHTML = price[12];
+document.getElementById("price_mod_sv").innerHTML = price[13];
+document.getElementById("price_old").innerHTML = price[14];
+document.getElementById("price_old_st").innerHTML = price[15];
 
 
 
