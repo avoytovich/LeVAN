@@ -4,6 +4,9 @@ $(document).ready(function() {
     $('.avstrijska_sv_small').click(about_AVSsv);
     $('.avstrijska_tem_small').click(about_AVStem);
     $('.california_bil_small').click(about_CALbil);
+    $('.california_small').click(about_CAL);
+    $('.california_sv_small').click(about_CALsv);
+    $('.california_tem_small').click(about_CALtem);
     $('.laying').click(laying);
     $('#home').click(home);
     $('#production').click(production);
@@ -22,18 +25,33 @@ function on_top () {
 }
 
 function about_AVSsv () {
-    $('.about_all, #avstrijska_tem, #california_bil' ).fadeOut(1000);
+    $('.about_all, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem' ).fadeOut(1000);
     $('.discribe_all, #avstrijska_sv').fadeIn(1000);
 }
 
 function about_AVStem () {
-    $('.about_all, #avstrijska_sv, #california_bil' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #california_bil, #california, #california_sv, #california_tem' ).fadeOut(1000);
     $('.discribe_all, #avstrijska_tem').fadeIn(1000);
 }
 
 function about_CALbil () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california, #california_sv, #california_tem' ).fadeOut(1000);
     $('.discribe_all, #california_bil').fadeIn(1000);
+}
+
+function about_CAL () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california_sv, #california_tem' ).fadeOut(1000);
+    $('.discribe_all, #california').fadeIn(1000);
+}
+
+function about_CALsv () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_tem' ).fadeOut(1000);
+    $('.discribe_all, #california_sv').fadeIn(1000);
+}
+
+function about_CALtem () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv' ).fadeOut(1000);
+    $('.discribe_all, #california_tem').fadeIn(1000);
 }
 
 function laying () {
@@ -119,9 +137,9 @@ var price = [];
     price [0] = "5,11"; //Avs_sv
     price [1] = "5,11"; //Avs_tem
     price [2] = "5,15"; //Cal_bil
-    price [3] = "5,11"; //Avs_sv
-    price [4] = "5,11"; //Avs_sv
-    price [5] = "5,11"; //Avs_sv
+    price [3] = "5,15"; //Cal
+    price [4] = "5,15"; //Cal_sv
+    price [5] = "5,15"; //Cal_tem
     price [6] = "5,11"; //Avs_sv
     price [7] = "5,11"; //Avs_sv
     price [8] = "5,11"; //Avs_sv
@@ -131,6 +149,9 @@ var price = [];
 document.getElementById("price_avs_sv").innerHTML = price[0];
 document.getElementById("price_avs_tem").innerHTML = price[1];
 document.getElementById("price_cal_bil").innerHTML = price[2];
+document.getElementById("price_cal").innerHTML = price[3];
+document.getElementById("price_cal_sv").innerHTML = price[4];
+document.getElementById("price_cal_tem").innerHTML = price[5];
 
 
 
