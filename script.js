@@ -17,11 +17,16 @@ $(document).ready(function() {
     $('.modena_sv_small').click(about_MODsv);
     $('.old_small').click(about_OLD);
     $('.old_st_small').click(about_OLDst);
+    $('.staruy_myr_small').click(about_STmyr);
+    $('.verona_sv_small').click(about_VERsv);
+    $('.vushneva_small').click(about_VUSH);
     $('.laying').click(laying);
     $('#home').click(home);
     $('#production').click(production);
     $('.ico').mouseenter(light);
     $('.ico').mouseleave(dark);
+    $('#contact').click(contact);
+    $('#calculator').click(calculator);
 });
 
 function logo () {
@@ -35,100 +40,125 @@ function on_top () {
 }
 
 function about_AVSsv () {
-    $('.about_all, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #avstrijska_sv').fadeIn(1000);
 }
 
 function about_AVStem () {
-    $('.about_all, #avstrijska_sv, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #avstrijska_tem').fadeIn(1000);
 }
 
 function about_CALbil () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #california_bil').fadeIn(1000);
 }
 
 function about_CAL () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #california').fadeIn(1000);
 }
 
 function about_CALsv () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #california_sv').fadeIn(1000);
 }
 
 function about_CALtem () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #california_tem').fadeIn(1000);
 }
 
 function about_CAR () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #carolinna').fadeIn(1000);
 }
 
 function about_CEG () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #cegljna').fadeIn(1000);
 }
 
 function about_COP () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #copyng').fadeIn(1000);
 }
 
 function about_COR () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #coralova').fadeIn(1000);
 }
 
 function about_CORN () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #garden_trav, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #corner').fadeIn(1000);
 }
 
 function about_GARDtr () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #modena_roz, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #garden_trav').fadeIn(1000);
 }
 
 function about_MODroz () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_sv, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #modena_roz').fadeIn(1000);
 }
 
 function about_MODsv () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #old, #old_street' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #old, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #modena_sv').fadeIn(1000);
 }
 
 function about_OLD () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old_street').fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old_street, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #old').fadeIn(1000);
 }
 
 function about_OLDst () {
-    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old' ).fadeOut(1000);
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #staruy_myr, #verona_sv, #vushneva' ).fadeOut(1000);
     $('.discribe_all, #old_street').fadeIn(1000);
+}
+
+function about_STmyr () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #verona_sv, #vushneva' ).fadeOut(1000);
+    $('.discribe_all, #staruy_myr').fadeIn(1000);
+}
+
+function about_VERsv () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #vushneva' ).fadeOut(1000);
+    $('.discribe_all, #verona_sv').fadeIn(1000);
+}
+
+function about_VUSH () {
+    $('.about_all, #avstrijska_sv, #avstrijska_tem, #california_bil, #california, #california_sv, #california_tem, #carolinna, #cegljna, #copyng, #coralova, #corner, #garden_trav, #modena_roz, #modena_sv, #old, #old_street, #staruy_myr, #verona_sv' ).fadeOut(1000);
+    $('.discribe_all, #vushneva').fadeIn(1000);
 }
 
 
 function laying () {
-    $('.background_main, .background_notice, .product, .carousel' ).fadeOut(1000);
+    $('.background_main, .background_notice, .product, .carousel, .contact, #calculat' ).fadeOut(1000);
     $('.information').fadeIn(1000)
 }
 
 function home () {
-    $('.information, .product').fadeOut(1000);
+    $('.information, .product, .contact, #calculat').fadeOut(1000);
     $('.background_main, .background_notice, .carousel').fadeIn(1000)
 }
 
 function production () {
-    $('.background_main, .information, .background_notice, .carousel, .discribe_all').fadeOut(1000);
+    $('.background_main, .information, .background_notice, .carousel, .discribe_all, .contact, #calculat').fadeOut(1000);
     $('.product, .about_all').fadeIn(1000);
 }
+
+function contact () {
+    $('.background_main, .information, .background_notice, .carousel, .discribe_all, .product, #calculat').fadeOut(1000);
+    $('.contact').fadeIn(1000);
+}
+
+function calculator () {
+    $('#calculat').toggle(1000);
+}
+
 
 function light () {
     $(this).fadeTo("fast",1);
@@ -139,6 +169,88 @@ function dark () {
     $(this).fadeTo("fast",0.5);
 }
 
+
+$(document).ready(function(){
+    function testnumlength () {
+      if (number.length > 7) {
+          $('#total').text("Err");
+          number = "";
+      }  
+    }
+    var number ="";
+    var newnumber = "";
+    var total = "";
+    var operator = "";
+    $("#total").text("0");
+    $("#numbers a, #decimal").not("#clear, #clearall").click(function (){
+        newnumber = $(this).text();
+        number += newnumber;
+        $("#total").text(number);
+        testnumlength(number);
+    }); 
+    $("#clear").click(function(){
+        number = '';
+        $("#total").text("0");
+    });
+    $("#clearall").click(function(){
+        number = '';
+        newnumber = '';
+        $("#total").text("0");
+    });
+    $('#operators a').not("#equals, #decimal").click(function(){
+        operator = $(this).text();
+             total = number;
+             number = "";
+             $("#total").text("");
+    });
+    $('#equals').click (function() {
+        if (operator === "+") {
+            total=Number(total);
+            number=Number(number);
+            total += number;
+            if ((total%total.toFixed(2)) === 0) {
+                $("#total").text(total);
+            } else {
+                $("#total").text((total).toFixed(2));
+            }
+            total="";
+            number="";
+        } else if (operator === "-") {
+            total=Number(total);
+            number=Number(number);
+            total -= number;
+            if ((total%total.toFixed(2)) === 0) {
+                $("#total").text(total);
+            } else {
+                $("#total").text((total).toFixed(2));
+            }
+            total="";
+            number="";
+        } else if (operator === "*") {
+            total=Number(total);
+            number=Number(number);
+            total *= number;
+            if ((total%total.toFixed(2)) === 0) {
+                $("#total").text(total);
+            } else {
+                $("#total").text((total).toFixed(2));
+            }
+            total="";
+            number="";
+        } else if (operator === "/") {
+            total=Number(total);
+            number=Number(number);
+            total /= number;
+            if ((total%total.toFixed(2)) === 0) {
+                $("#total").text(total);
+            } else {
+                $("#total").text((total).toFixed(2));
+            }
+            total="";
+            number="";
+        }
+    });
+});
 
 
 
@@ -211,9 +323,9 @@ var price = [];
     price [13] = "309,54"; //Mod_sv
     price [14] = "5,25"; //Old
     price [15] = "5,30"; //Old_st
-    price [16] = "5,11"; //Avs_sv
-    price [17] = "5,11"; //Avs_sv
-    price [18] = "5,11"; //Avs_sv
+    price [16] = "5,15"; //St_myr
+    price [17] = "243,44"; //Ver_sv
+    price [18] = "5,20"; //Vush
     price [19] = "5,11"; //Avs_sv
     price [20] = "5,11"; //Avs_sv
 
@@ -233,6 +345,9 @@ document.getElementById("price_mod_roz").innerHTML = price[12];
 document.getElementById("price_mod_sv").innerHTML = price[13];
 document.getElementById("price_old").innerHTML = price[14];
 document.getElementById("price_old_st").innerHTML = price[15];
+document.getElementById("price_st_myr").innerHTML = price[16];
+document.getElementById("price_ver_sv").innerHTML = price[17];
+document.getElementById("price_vush").innerHTML = price[18];
 
 
 

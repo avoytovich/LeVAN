@@ -142,7 +142,7 @@ iframe {
     font-family: "Open Sans Condensed";
 }
 
-.information h3, .background_notice h3, .product h3 {
+.information h3, .background_notice h3, .product h3, .contact h3 {
     font-size: 24px;
     text-align: center;
     color: #DB3340;
@@ -168,7 +168,7 @@ iframe {
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 
-.product {
+.product, .contact, #calculat {
     display: none;
     text-align: center;
 }
@@ -195,11 +195,6 @@ figure img {
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 
-#avstrijska_sv, #avstrijska_tem, #california_bil, #california {
-    display: none;
-    text-align: center;
-}
-
 .all_product p {
     margin: 10px;
     color: #DB3340;
@@ -222,6 +217,69 @@ figure img {
     position: absolute;
     top: 10%;
     left: 10%;
+}
+
+#calculat {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+	background-color: #F7EAC8;
+	border: 3px black solid;
+	margin: auto;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+#total {
+    height: 45px;
+    width: 90%;
+    margin:auto;
+    color: #F7EAC8;
+    background-color: #28ABE3;
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 30px;
+    padding: 0 5px;
+    border: 2px black solid;
+}
+
+#calculat #operators,#calculat #numbers {
+    margin: auto;
+    width: 95%;
+}
+
+#operators a {
+	display: inline-block;
+	width: 9%;
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+	text-align: center;
+	font-size: 14px;
+	padding: 2%;
+	margin: 3% 2%;
+	background-color: #F7EAC8;
+	border: 1px solid #28ABE3;
+    border-radius: 5px;
+}
+
+#numbers a {
+	display: inline-block;
+	width: 22%;
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+	text-align: center;
+	font-size: 17px;
+	padding: 2%;
+	margin: 3% 2%;
+	background-color: #F7EAC8;
+	border: 1px solid #28ABE3;
+	border-radius: 5px;
+}
+
+#numbers #clearall,#numbers #clear {
+    color: #DB3340;
 }
 
 

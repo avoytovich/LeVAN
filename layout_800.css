@@ -7,6 +7,6 @@
     column-gap: 5px;
 }
 
-#enterprise_two, #enterprise_three, .design, #quotes, #headphone, #about_color {
+#enterprise_two, #enterprise_three, .design, #quotes, #headphone, #about_color, #calculator {
     display: none;
 }
