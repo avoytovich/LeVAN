@@ -26,7 +26,7 @@ $(document).ready(function() {
     $('.ico').mouseenter(light);
     $('.ico').mouseleave(dark);
     $('#contact').click(contact);
-    $('#calculator').click(calculator);
+    $('.calculator').click(calculator);
 });
 
 function logo () {
@@ -156,7 +156,7 @@ function contact () {
 }
 
 function calculator () {
-    $('#calculat').toggle(1000);
+    $('#calculat').slideToggle(1000);
 }
 
 
