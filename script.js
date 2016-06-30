@@ -26,7 +26,7 @@ $(document).ready(function() {
     $('.ico').mouseenter(light);
     $('.ico').mouseleave(dark);
     $('#contact').click(contact);
-    $('.calculator').click(calculator);
+    $('.calculator, .slidecalc').click(calculator);
 });
 
 function logo () {
@@ -136,28 +136,29 @@ function about_VUSH () {
 
 
 function laying () {
-    $('.background_main, .background_notice, .product, .carousel, .contact, #calculat' ).fadeOut(1000);
+    $('.background_main, .background_notice, .product, .carousel, .contact').fadeOut(1000);
     $('.information').fadeIn(1000)
 }
 
 function home () {
-    $('.information, .product, .contact, #calculat').fadeOut(1000);
+    $('.information, .product, .contact').fadeOut(1000);
     $('.background_main, .background_notice, .carousel').fadeIn(1000)
 }
 
 function production () {
-    $('.background_main, .information, .background_notice, .carousel, .discribe_all, .contact, #calculat').fadeOut(1000);
+    $('.background_main, .information, .background_notice, .carousel, .discribe_all, .contact').fadeOut(1000);
     $('.product, .about_all').fadeIn(1000);
 }
 
 function contact () {
-    $('.background_main, .information, .background_notice, .carousel, .discribe_all, .product, #calculat').fadeOut(1000);
+    $('.background_main, .information, .background_notice, .carousel, .discribe_all, .product').fadeOut(1000);
     $('.contact').fadeIn(1000);
 }
 
 function calculator () {
-    $('#calculat').slideToggle(1000);
+    $(".calc").fadeToggle(1000);
 }
+
 
 
 function light () {
@@ -201,7 +202,7 @@ $(document).ready(function(){
         operator = $(this).text();
              total = number;
              number = "";
-             $("#total").text("");
+             $("#total").text(total+operator);
     });
     $('#equals').click (function() {
         if (operator === "+") {
