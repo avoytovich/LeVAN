@@ -36,9 +36,9 @@ body {
 }
 
 .background_header_two {
-    font-size: 24px;
+    font-size: 27px;
     text-align: center;
-    font-family: "Open Sans Condensed";
+    font-family: "Algerian";
     color: #DB3340;
     background: #F7EAC8;
 }
@@ -205,8 +205,12 @@ figure img {
     text-transform: uppercase;  
 }
 
-#about_product p {
-    font-size: 17px;
+#about_color p {
+    font-size: 19px;
+    font-style: italic;
+    text-indent: 20px;
+    text-align: justify;
+    font-family: "Bradley Hand ITC";
 }
 
 #sale-rules {
