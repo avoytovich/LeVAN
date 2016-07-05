@@ -27,6 +27,8 @@ $(document).ready(function() {
     $('.ico').mouseleave(dark);
     $('#contact').click(contact);
     $('.calculator, .slidecalc').click(calculator);
+    $('.about_all figure').hover(figure_light, figure_dark);
+    
     
     var price = [];
     price [0] = "5,11"; //Avs_sv
@@ -454,6 +456,20 @@ function calculator () {
     $(".calc").fadeToggle(1000);
 }
 
+function figure_light () {
+    $(this).addClass("highlight");
+    $('.highlight figcaption').css("background","#E8B71A");
+    $('.highlight figcaption').css("font-family","Algerian");
+    $('.highlight figcaption').css("color","#DB3340");
+}
+
+function figure_dark () {
+    $('.highlight figcaption').css("color","#F7EAC8");
+    $('.highlight figcaption').css("font-family","Open Sans Condensed");
+    $('.highlight figcaption').css("background","#28ABE3");
+    $(this).removeClass("highlight");
+}
+
 function light () {
     $(this).fadeTo("fast",1);
 }
@@ -461,6 +477,8 @@ function light () {
 function dark () {
     $(this).fadeTo("fast",0.5);
 }
+
+
 
     function testnumlength () {
       if (number.length > 7) {

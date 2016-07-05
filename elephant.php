@@ -1,4 +1,4 @@
 <?php
-echo "<div>hal</div>";
+echo "<div>hallo</div>";
 
 ?>
