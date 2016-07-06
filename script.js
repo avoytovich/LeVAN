@@ -23,12 +23,14 @@ $(document).ready(function() {
     $('.laying').click(laying);
     $('#home').click(home);
     $('#production').click(production);
-    $('.ico').mouseenter(light);
-    $('.ico').mouseleave(dark);
+    $('.ico, .design, #headphone').mouseenter(light);
+    $('.ico, .design, #headphone').mouseleave(dark);
     $('#contact').click(contact);
     $('.calculator, .slidecalc').click(calculator);
     $('.about_all figure').hover(figure_light, figure_dark);
+    $("#logo").click(explode);
     
+
     
     var price = [];
     price [0] = "5,11"; //Avs_sv
@@ -170,7 +172,6 @@ $(document).ready(function() {
    },
     
     };
-    
     
 
 function logo () {
@@ -454,6 +455,7 @@ function contact () {
 
 function calculator () {
     $(".calc").fadeToggle(1000);
+    $('.calc').draggable();
 }
 
 function figure_light () {
@@ -475,8 +477,17 @@ function light () {
 }
 
 function dark () {
-    $(this).fadeTo("fast",0.5);
+    $(this).fadeTo("fast",0.7);
 }
+
+function explode () {
+    $("#logo").effect("explode");
+    setTimeout(function () {
+        $("#logo").effect("slide", 500);
+    }, 1000);
+}
+
+
 
 
 
@@ -559,7 +570,16 @@ function dark () {
             number="";
         }
     });
-
+ 
+    
+    $(function opacity () {
+        function opacity_add () {
+            $('.design').css("opacity", "1");
+            setTimeout(opacity, 1000);
+        }
+        setTimeout(opacity_add, 1000);
+        $('.design').css("opacity", "0.7");
+    });
 
 
 $(function () {
@@ -619,6 +639,7 @@ document.getElementById("citations").innerHTML = array[Math.floor(Math.random()*
 document.getElementById('headphone').addEventListener('click', my);
 
 function my () {
+    $("#headphone").effect("bounce", {times:3},500);
     var audio = document.getElementById('audio');
     audio.play();
     document.getElementById('headphone').addEventListener('click', me);
