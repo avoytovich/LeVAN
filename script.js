@@ -29,6 +29,7 @@ $(document).ready(function() {
     $('.calculator, .slidecalc').click(calculator);
     $('.about_all figure').hover(figure_light, figure_dark);
     $("#logo").click(explode);
+    $(".like").click(clickCounter);
     
 
     
@@ -485,6 +486,19 @@ function explode () {
     setTimeout(function () {
         $("#logo").effect("slide", 500);
     }, 1000);
+}
+
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        $("#result-like").html("This is liked a " + localStorage.clickcount + " person(s).");
+    } else {
+        $("#result-like").html("Sorry, your browser does not support web storage...");
+    }
 }
 
 
