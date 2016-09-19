@@ -513,7 +513,7 @@ function clickCounter() {
     }
     var number ="";
     var newnumber = "";
-    var total = "";
+    var total="";
     var operator = "";
     $("#total").text("0");
     $("#numbers a, #decimal").not("#clear, #clearall").click(function (){
@@ -533,9 +533,10 @@ function clickCounter() {
     });
     $('#operators a').not("#equals, #decimal").click(function(){
         operator = $(this).text();
-             total = number;
-             number = "";
-             $("#total").text(total+operator);
+        $("#total").text(number+operator);
+        total = number;
+        number = '';
+        newnumber = '';
     });
     $('#equals').click (function() {
         if (operator === "+") {
@@ -547,8 +548,7 @@ function clickCounter() {
             } else {
                 $("#total").text((total).toFixed(2));
             }
-            total="";
-            number="";
+            number = total;
         } else if (operator === "-") {
             total=Number(total);
             number=Number(number);
@@ -558,8 +558,7 @@ function clickCounter() {
             } else {
                 $("#total").text((total).toFixed(2));
             }
-            total="";
-            number="";
+            number = total;
         } else if (operator === "*") {
             total=Number(total);
             number=Number(number);
@@ -569,8 +568,7 @@ function clickCounter() {
             } else {
                 $("#total").text((total).toFixed(2));
             }
-            total="";
-            number="";
+            number = total;
         } else if (operator === "/") {
             total=Number(total);
             number=Number(number);
@@ -580,8 +578,7 @@ function clickCounter() {
             } else {
                 $("#total").text((total).toFixed(2));
             }
-            total="";
-            number="";
+            number = total;
         }
     });
  
