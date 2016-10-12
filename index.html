@@ -435,16 +435,36 @@
                  
                  <div class="contact col-lg-12 col-md-12 col-sm-12 col-xs-12">
                      <h3>Contact || Location</h3>
-                     <div id="containe">
-                     <form id="request">
-                         <label for="email">Your Email:</label>
-                         <input id="email" type="email" placeholder="levanwork@ukr.net"/>
-                         <br>
-                         <label for="msg">Message:</label>
-                         <input id="msg"/>
-                     </form>
-                     <button id="btn-send">Send</button>
+                     <div class="contact-block">
+                         <h4>м.Львів (офіс)</h4>
+                         <h4>81620 Львівська обл. с.В. Горожанка, вул. І.Франка, 77а</h4>
+                         <h4>Phone/Fax: +380(32)416-31-23,</h4>
+                         <h4>+380(50)315-19-76, +380(96)623-35-02</h4>
+                         <h4>e-mail: levanwork@ukr.net</h4>
                      </div>
+                     <form id="contact-form" class="form-horizontal" action="//formspree.io/levanwork@ukr.net" method="post">
+                         <div class="form-group">
+                             <div class="col-sm-12">
+                                 <input type="text" class="form-control" name="Name" placeholder="Input your name:">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="col-sm-12">
+                                 <input type="email" class="form-control" name="Email" placeholder="Input your email:">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="col-sm-12">
+                                 <textarea class="form-control" name="Message" cols="30" rows="6" placeholder="Message" required></textarea>
+                             </div>
+                         </div>
+                         <!-- CONFIG -->
+	                     <input class="hidden" type="text" name="_gotcha">
+	                     <input type="hidden" name="_subject" value="Subject">
+	                     <input type="hidden" name="_cc" value="email@cc.com">
+	                     <!-- /CONFIG -->
+	                     <input class="submit" type="submit" value="Send">
+                     </form>
                  </div>
             
             <div class="background_footer col-lg-12 col-md-12 col-sm-12 col-xs-12">

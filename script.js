@@ -501,19 +501,26 @@ function clickCounter() {
     }
 }
 
-$('#btn-send').click(function() {
-  // Please set your email in url field
-  $.ajax({
-      url: "https://formspree.io/levanwork@ukr.net",  
-      method: "POST",
-      data: {
-             email: $('#email').value,
-             message: $('#msg').value
-             },
-      dataType: "json"
-  }).done(function() {
-     $('#containe').html('<h1>Thank you!</h1>')
-  } );
+var $contactForm = $('#contact-form');
+$contactForm.submit(function(e) {
+	e.preventDefault();
+	$.ajax({
+		url: '//formspree.io/levanwork@ukr.net',
+		method: 'POST',
+		data: $(this).serialize(),
+		dataType: 'json',
+		beforeSend: function() {
+			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+		},
+		success: function(data) {
+			$contactForm.find('.alert--loading').hide();
+			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+		},
+		error: function(err) {
+			$contactForm.find('.alert--loading').hide();
+			$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+		}
+	});
 });
 
 

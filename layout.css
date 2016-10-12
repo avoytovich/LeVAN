@@ -305,6 +305,27 @@ figure img {
     color: #DB3340;
 }
 
+#contact-form {
+    margin: auto;
+    width: 80%;
+}
+
+.contact h4, .contact h5 {
+    font-family: "Open Sans Condensed";
+    font-size: 23px;
+    line-height: 175%;
+}
+
+.contact-block {
+    margin: 50px auto;
+    width: 80%;
+    color: #F7EAC8;
+    background: #E8B71A;
+    border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+
 
 
 
