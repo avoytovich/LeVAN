@@ -36,7 +36,7 @@
                                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Інші інтереси<span class="caret"></span></a>
                                      <ul class="dropdown-menu">
                                          <li class="laying"><a href="#nav">Монтаж || Кладка</a></li>
-                                         <li><a href="#discounts">Знижки</a></li>
+                                         <li class="discou"><a href="#discounts">Знижки</a></li>
                                          <li><a href="#">Пропозиції</a></li>
                                          <li role="separator" class="divider"></li>
                                          <li><a href="#">Прайс</a></li>
@@ -194,12 +194,32 @@
                  </div>
                     
                  <div id="discounts" class="discounts col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                     <h3>отримай знижку на "deprecated" колекції декоративного каменю</h3>
+                     <hr>
+                     <h3>знижки на "deprecated" колекції декоративного каменю</h3>
                      <button class="discounts-random btn btn-success">Ваша знижка</button>
                      <div id="discounts-screen"></div>
+                     <form id="contact-form-screen" class="form-horizontal" action="//formspree.io/levanwork@ukr.net" method="post">
+                         <div class="form-group">
+                             <div class="col-sm-12">
+                                 <input type="email" class="form-control" name="Email" placeholder="Input your email:" required>
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="col-sm-12">
+                                 <textarea class="form-control discoun" name="Message" cols="20" rows="2" placeholder="Ваша знижка...натисніть зелену кнопку..." readonly="readonly" required></textarea>
+                             </div>
+                         </div>
+                         <!-- CONFIG -->
+	                     <input class="hidden" type="text" name="_gotcha">
+	                     <input type="hidden" name="_subject" value="Subject">
+	                     <input type="hidden" name="_cc" value="email@cc.com">
+	                     <!-- /CONFIG -->
+	                     <input class="submit" type="submit" value="Send">
+                     </form>
                  </div>
-                 
+      
                  <div class="background_notice col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                     <hr>
                      <h3>На замітку || P.S.</h3>
                      <p class="col-lg-4 col-md-4 col-sm-4 col-xs-12">Вітальня переважно найзатишніше місце у будинку, де збирається
                         вся сім'я і друзі, тому і лише тому, кожен дизайнер і власник намагається її зробити якомога гостинішою і привітнішою.  
@@ -405,12 +425,12 @@
                      <form id="contact-form" class="form-horizontal" action="//formspree.io/levanwork@ukr.net" method="post">
                          <div class="form-group">
                              <div class="col-sm-12">
-                                 <input type="text" class="form-control" name="Name" placeholder="Input your name:">
+                                 <input type="text" class="form-control" name="Name" placeholder="Input your name:" required>
                              </div>
                          </div>
                          <div class="form-group">
                              <div class="col-sm-12">
-                                 <input type="email" class="form-control" name="Email" placeholder="Input your email:">
+                                 <input type="email" class="form-control" name="Email" placeholder="Input your email:" required>
                              </div>
                          </div>
                          <div class="form-group">
@@ -446,7 +466,6 @@
         <script src="bootstrap/js/bootstrap.js"></script>
     
         <script src="script.js"></script>
-        
         
            
         

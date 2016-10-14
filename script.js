@@ -31,7 +31,8 @@ $(document).ready(function() {
     $("#logo").click(explode);
     $(".discounts-random").click(clickCounter);
     $(".contact-form").click(contact);
-    $(".discounts-random").click(discounts_random);
+    $(".discou").click(home);
+    
     
 
     
@@ -437,22 +438,22 @@ function about_VUSH () {
 
 
 function laying () {
-    $('.background_main, .background_notice, .product, .carousel, .contact').fadeOut(1000);
+    $('.background_main, .background_notice, .product, .carousel, .contact, .discounts').fadeOut(1000);
     $('.information').fadeIn(1000)
 }
 
 function home () {
     $('.information, .product, .contact').fadeOut(1000);
-    $('.background_main, .background_notice, .carousel').fadeIn(1000)
+    $('.background_main, .background_notice, .carousel, .discounts').fadeIn(1000)
 }
 
 function production () {
-    $('.background_main, .information, .background_notice, .carousel, .discribe_all, .contact').fadeOut(1000);
+    $('.background_main, .information, .background_notice, .carousel, .discribe_all, .contact, .discounts').fadeOut(1000);
     $('.product, .about_all').fadeIn(1000);
 }
 
 function contact () {
-    $('.background_main, .information, .background_notice, .carousel, .discribe_all, .product').fadeOut(1000);
+    $('.background_main, .information, .background_notice, .carousel, .discribe_all, .product, .discounts').fadeOut(1000);
     $('.contact').fadeIn(1000);
 }
 
@@ -493,18 +494,21 @@ function explode () {
 var discount = Math.floor(Math.random()*50+10);
 function clickCounter() {
     if(typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-            alert ("Ви вже отримали знижку, вона становила - "+localStorage.clickcount+"%");
+        if (localStorage.clickcounter) {
+            alert ("Ви вже отримали знижку, вона становила - "+localStorage.clickcounter+"%");
+            $(".discoun").html("Ваша знижка на колекцію \"deprecated\" становить "+localStorage.clickcounter+"%");
         } else {
-            localStorage.clickcount = discount;
+            localStorage.clickcounter = discount;
+            discounts_random ();
+            $(".discoun").html("Ваша знижка на колекцію \"deprecated\" становить "+localStorage.clickcounter+"%");
         }
-        $("#discounts-screen").html(discount+"%");
     } else {
-        $("#result-like").html("Sorry, your browser does not support web storage...");
+        alert ("Sorry, your browser does not support web storage...");
     }
 }
 
 function discounts_random () {
+    $("#discounts-screen").html(discount+"%");
     $("#discounts-screen").css("width","0%");
     $("#discounts-screen").animate({width: discount+"%"}, "slow");
     $(".discounts-random").attr("disabled","disabled");
@@ -534,6 +538,27 @@ $contactForm.submit(function(e) {
 	});
 });
 
+var $contactFormScreen = $('#contact-form-screen');
+$contactFormScreen.submit(function(e) {
+	e.preventDefault();
+	$.ajax({
+		url: '//formspree.io/levanwork@ukr.net',
+		method: 'POST',
+		data: $(this).serialize(),
+		dataType: 'json',
+		beforeSend: function() {
+			$contactFormScreen.append('<div class="alert alert--loading">Sending message…</div>');
+		},
+		success: function(data) {
+			$contactFormScreen.find('.alert--loading').hide();
+			$contactFormScreen.append('<div class="alert alert--success">Message sent!</div>');
+		},
+		error: function(err) {
+			$contactFormScreen.find('.alert--loading').hide();
+			$contactFormScreen.append('<div class="alert alert--error">Ops, there was an error.</div>');
+		}
+	});
+});
 
 
 
