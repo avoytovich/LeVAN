@@ -29,7 +29,9 @@ $(document).ready(function() {
     $('.calculator, .slidecalc').click(calculator);
     $('.about_all figure').hover(figure_light, figure_dark);
     $("#logo").click(explode);
-    $(".like").click(clickCounter);
+    $(".discounts-random").click(clickCounter);
+    $(".contact-form").click(contact);
+    $(".discounts-random").click(discounts_random);
     
 
     
@@ -488,18 +490,27 @@ function explode () {
     }, 1000);
 }
 
+var discount = Math.floor(Math.random()*50+10);
 function clickCounter() {
     if(typeof(Storage) !== "undefined") {
         if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+1;
+            alert ("Ви вже отримали знижку, вона становила - "+localStorage.clickcount+"%");
         } else {
-            localStorage.clickcount = 1;
+            localStorage.clickcount = discount;
         }
-        $("#result-like").html("This is liked a " + localStorage.clickcount + " person(s).");
+        $("#discounts-screen").html(discount+"%");
     } else {
         $("#result-like").html("Sorry, your browser does not support web storage...");
     }
 }
+
+function discounts_random () {
+    $("#discounts-screen").css("width","0%");
+    $("#discounts-screen").animate({width: discount+"%"}, "slow");
+    $(".discounts-random").attr("disabled","disabled");
+}
+
+
 
 var $contactForm = $('#contact-form');
 $contactForm.submit(function(e) {
@@ -652,17 +663,17 @@ $(function () {
 
 
     var array = [];
-    array [0] = "'Success is most often achieved by those who don't know that failure is inevitable'--- Coco Chanel";
-    array [1] = "'Things work out best for those who make the best of how things work out'--- John Wooden";
-    array [2] = "'Courage is grace under pressure'--- Ernest Hemingway";
-    array [3] = "'If you are not willing to risk the usual, you will have to settle for the ordinary'--- Jim Rohn";
-    array [4] = "'Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning'--- Albert Einstein";
-    array [5] = "'Take up one idea. Make that one idea your life -- think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success'--- Swami Vivekananda";
-    array [6] = "'Sometimes you can't see yourself clearly until you see yourself through the eyes of others'--- Ellen DeGeneres";
-    array [7] = "'All our dreams can come true if we have the courage to pursue them'--- Walt Disney";
-    array [8] = "'It does not matter how slowly you go, so long as you do not stop'--- Confucius";
-    array [9] = "'Success is walking from failure to failure with no loss of enthusiasm'--- Winston Churchill";
-    array [10] = "'Someone is sitting in the shade today because someone planted a tree a long time ago'--- Warren Buffett";
+    array [0] = "Найкращий час, щоб посадити дерево, був 20 років тому. Наступний найкращий час - сьогодні.";
+    array [1] = "З думками своїми обходься як із гостями, а з бажаннями - як із дітьми.";
+    array [2] = "Дешеві речі не цінні, цінні речі не дешеві.";
+    array [3] = "І у маленької людини можуть бути великі бажання.";
+    array [4] = "Там, де припиняється бажання, припиняється і людина. Л. Фейєрбах";
+    array [5] = "У кожної людини є бажання, про які вона не розповідає іншим, і бажання, в яких вона не зізнається навіть собі самій.";
+    array [6] = "Володіти смаком - це більше, ніж мати розум. ";
+    array [7] = "Люди можуть пробачити людині розум, навіть талант, але красу - ніколи.";
+    array [8] = "Люди хочуть все змінити і одночасно хочуть, щоб все залишалося тим самим, таким, як раніше. Пауло Коельо";
+    array [9] = "Все має змінитися, щоб все залишилося по-старому. Джузеппе Томазі ді Лампедуза";
+    array [10] = "Якщо ти хочеш зміну в майбутньому - стань цією зміною в сьогоденні. М. Ганді";
 
 document.getElementById("citations").innerHTML = array[Math.floor(Math.random()*10)];
 
