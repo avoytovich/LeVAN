@@ -5,21 +5,21 @@ app.controller('MainController', ['$scope', function($scope) {
     name: "Brick \"avstrijska svitla\"", 
     href: "#nav",
     clas: "avstrijska_sv_small", 
-    src: "/images/small/avstrijska_sv_small.jpg",
+    src: "./images/small/avstrijska_sv_small.jpg",
     alt: "avstrijska_sv_small"
   }, 
   { 
     name: "Brick \"avstrijska temna\"", 
     href: "#nav",
     clas: "avstrijska_tem_small", 
-    src: "/images/small/avstrijska_tem_small.jpg",
+    src: "./images/small/avstrijska_tem_small.jpg",
     alt: "avstrijska_tem_small"
   },
   { 
     name: "Brick \"california bila\"", 
     href: "#nav",
     clas: "california_bil_small", 
-    src: "/images/small/california_bil_small.jpg",
+    src: "./images/small/california_bil_small.jpg",
     alt: "california_bil_small"
   },
   { 
