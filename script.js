@@ -34,6 +34,7 @@ $(document).ready(function() {
     $(".discou").click(home);
     
     
+    
 
     
     var price = [];
@@ -559,6 +560,7 @@ $contactFormScreen.submit(function(e) {
 		}
 	});
 });
+
 
 
 
