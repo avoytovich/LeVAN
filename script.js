@@ -38,25 +38,25 @@ $(document).ready(function() {
 
     
     var price = [];
-    price [0] = "5,11"; //Avs_sv
-    price [1] = "5,11"; //Avs_tem
-    price [2] = "5,15"; //Cal_bil
-    price [3] = "5,15"; //Cal
-    price [4] = "5,15"; //Cal_sv
-    price [5] = "5,15"; //Cal_tem
-    price [6] = "371,45"; //Car
-    price [7] = "5,20"; //Ceg
-    price [8] = "123,82"; //Cop
-    price [9] = "5,15"; //Cor
-    price [10] = "17,52"; //Corn
-    price [11] = "355,98"; //Gar_tr
-    price [12] = "318,78"; //Mod_roz
-    price [13] = "309,54"; //Mod_sv
-    price [14] = "5,25"; //Old
-    price [15] = "5,30"; //Old_st
-    price [16] = "5,15"; //St_myr
-    price [17] = "243,44"; //Ver_sv
-    price [18] = "5,20"; //Vush
+    price [0] = "6,10"; //Avs_sv
+    price [1] = "6,10"; //Avs_tem
+    price [2] = "6,20"; //Cal_bil
+    price [3] = "6,20"; //Cal
+    price [4] = "6,20"; //Cal_sv
+    price [5] = "6,20"; //Cal_tem
+    price [6] = "439,20"; //Car
+    price [7] = "6,30"; //Ceg
+    price [8] = "146,40"; //Cop
+    price [9] = "6,20"; //Cor
+    price [10] = "23,00"; //Corn
+    price [11] = "420,90"; //Gar_tr
+    price [12] = "366,00"; //Mod_roz
+    price [13] = "366,00"; //Mod_sv
+    price [14] = "6,40"; //Old
+    price [15] = "6,50"; //Old_st
+    price [16] = "6,20"; //St_myr
+    price [17] = "287,85"; //Ver_sv
+    price [18] = "6,30"; //Vush
     price [19] = "5,11"; //Avs_sv
     price [20] = "5,11"; //Avs_sv
     
